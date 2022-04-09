@@ -25,8 +25,7 @@ public class TestBase {
 		try {
 		prop= new Properties();
 		
-		FileInputStream inputProperties= new FileInputStream(
-				"C:\\Users\\Murshalin\\Downloads\\ecom.automation2\\ecom.automation2\\src\\test\\java\\ecom\\config\\config.properties");
+		FileInputStream inputProperties= new FileInputStream("./src/test/java/ecom/config/config.properties");
 		
 		prop.load(inputProperties);
 		
