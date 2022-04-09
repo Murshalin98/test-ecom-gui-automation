@@ -13,6 +13,8 @@ public class BuyerLoginPOM extends TestBase{
 	//User icon
 	@FindBy(xpath = "//header/div[1]/nav[1]/div[1]/div[3]/span[2]/i[1]")
 	WebElement userIcon;
+	
+
 	// Email field
 	@FindBy(id = "normal_login_email")
 	WebElement emailField;

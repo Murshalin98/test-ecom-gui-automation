@@ -9,110 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Command line suite</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,752</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">4,690</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ecom.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1649523700361</td><td rowspan="1">19274</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ecom.runner.TestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1649523667417</td><td rowspan="1">32853</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">ecom.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1649528920893</td><td rowspan="2">1037</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">ecom.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buyer order a product successfully&quot;</td><td>&quot;Optional[Order Product]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;I login with my user credentials&apos; and 15 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;I login with my user credentials&quot;)
-public void i_login_with_my_user_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on Mens Fashion catagory&quot;)
-public void i_click_on_mens_fashion_catagory() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on a item&quot;)
-public void i_click_on_a_item() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on Buy Now button&quot;)
-public void i_click_on_buy_now_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on Continue to shipping button&quot;)
-public void i_click_on_continue_to_shipping_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on Add New Address button to add delivery address&quot;)
-public void i_click_on_add_new_address_button_to_add_delivery_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I enter all input address fields&quot;)
-public void i_enter_all_input_address_fields(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
-    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on create button&quot;)
-public void i_click_on_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on radio button to set primary address&quot;)
-public void i_click_on_radio_button_to_set_primary_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on Continue to payment button&quot;)
-public void i_click_on_continue_to_payment_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I select a payment method&quot;)
-public void i_select_a_payment_method() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on confirm order button&quot;)
-public void i_click_on_confirm_order_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I enter transaction id&quot;)
-public void i_enter_transaction_id() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I click on confirm button&quot;)
-public void i_click_on_confirm_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I should see {string} button&quot;)
-public void i_should_see_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;I logout from the application&quot;)
-public void i_logout_from_the_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ecom.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buyer should login successfully with valid credentials&quot;</td><td>&quot;Optional[Buyer Login]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">ecom.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buyer order a product successfully&quot;</td><td>&quot;Optional[Order Product]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
+	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
+	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
+	at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_02_buyProduct.feature:4)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ecom.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Buyer should login successfully with valid credentials&quot;</td><td>&quot;Optional[Buyer Login]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
+	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
+	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
+	at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_01_buyerLogin.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
