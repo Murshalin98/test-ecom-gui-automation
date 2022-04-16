@@ -37,34 +37,52 @@ public class TestBase {
 	}
 	
 	//Driver initialization
-	public static void intializeDriver() {
+	public static void intializeDriverAdmin() {
 		WebDriverManager.firefoxdriver().setup();
 		WebDriverManager.chromedriver().setup();
 		WebDriverManager.edgedriver().setup();
 		
 		String browserName=prop.getProperty("browser");
 		
-		if(browserName.equals("firefox")) {
-			driver=new FirefoxDriver();
-		}else if (browserName.equals("chrome")) {
-			driver= new ChromeDriver();
-		}else if (browserName.equals("edge")) {
-			driver=new EdgeDriver();
-		}else {
-			System.out.println("Driver's information is not valid");
-		}
+		if (browserName.equals("firefox")) {
+            driver = new FirefoxDriver();
+        } else if (browserName.equals("chrome")) {
+            driver = new ChromeDriver();
+        } else if (browserName.equals("edge")) {
+            driver = new EdgeDriver();
+        } else {
+            System.out.println("Driver's information not found");
+        }
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("adminURL"));
-		
-		
-		
-		
 	}
 	
-	
+	//Driver initialization
+		public static void intializeDriverUser() {
+			WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.chromedriver().setup();
+			WebDriverManager.edgedriver().setup();
+			
+			String browserName=prop.getProperty("browser");
+			
+			if (browserName.equals("firefox")) {
+	            driver = new FirefoxDriver();
+	        } else if (browserName.equals("chrome")) {
+	            driver = new ChromeDriver();
+	        } else if (browserName.equals("edge")) {
+	            driver = new EdgeDriver();
+	        } else {
+	            System.out.println("Driver's information not found");
+	        }
+			
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.get(prop.getProperty("baseURL"));
+		}
 	
 	
 	

@@ -3,7 +3,7 @@ Feature: Update Address
 	Scenario: Buyer Should Update Address succesfully
 	
 		Given Buyer should navigate to the baseURL
-		When I login with my user credentials
+#		When I login with my user credentials
 		And I click on the burger icon
 		And I click on my account
 		And I click on the Address

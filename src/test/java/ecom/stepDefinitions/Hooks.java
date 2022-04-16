@@ -6,10 +6,15 @@ import io.cucumber.java.Before;
 
 public class Hooks extends TestBase{
 	
-	@Before ("@Admin")
+	@Before("@Admin")
+	public void initDriverAdmin() {
+		intializeDriverAdmin();
+	}
+	
+	@Before("@User")
 	public void initDriver() {
-		intializeDriver();	}
-
+		intializeDriverUser();
+	}
 	
 	@After
 	public void tearDown() {

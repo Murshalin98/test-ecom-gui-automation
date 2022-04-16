@@ -1,220 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-16T05:44:53 EDT" name="Default suite" finished-at="2022-04-16T05:45:53 EDT" duration-ms="60398">
+  <suite name="Default suite" duration-ms="11886" started-at="2022-04-17T03:10:54 BDT" finished-at="2022-04-17T03:11:06 BDT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@2a3b5b47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-04-16T05:44:53 EDT" name="Default test" finished-at="2022-04-16T05:45:53 EDT" duration-ms="60398">
+    <test name="Default test" duration-ms="11886" started-at="2022-04-17T03:10:54 BDT" finished-at="2022-04-17T03:11:06 BDT">
       <class name="ecom.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:44:53 EDT" name="setUpClass" finished-at="2022-04-16T05:44:53 EDT" duration-ms="353" status="PASS">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@2a3b5b47]" name="setUpClass" is-config="true" duration-ms="355" started-at="2022-04-17T03:10:54 BDT" finished-at="2022-04-17T03:10:54 BDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6dd38df2]]>
-=======
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Default suite" duration-ms="6457" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:14 EDT">
-    <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
-    </groups>
-    <test name="Default test" duration-ms="6457" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:14 EDT">
-      <class name="ecom.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="setUpClass" is-config="true" duration-ms="185" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:08 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@75961f16]]>
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
+                <![CDATA[org.testng.TestRunner@46c3a14d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-<<<<<<< HEAD
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:44:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:04 EDT" duration-ms="10965" status="PASS">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@2a3b5b47]" name="runScenario" duration-ms="11317" started-at="2022-04-17T03:10:54 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-17T03:11:06 BDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Admin should login successfully from admin URL"]]>
-=======
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="runScenario" duration-ms="6075" started-at="2022-04-16T01:42:08 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T01:42:14 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buyer Should Update Address succesfully"]]>
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
+                <![CDATA["Buyer should login successfully with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-<<<<<<< HEAD
-                <![CDATA["Optional[Admin Login]"]]>
+                <![CDATA["Optional[Buyer Login]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:26 EDT" duration-ms="22029" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Admin can add product from the admin's end"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Admin Add Product]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:41 EDT" duration-ms="14447" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Admin can add a campaign from the admin panel"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Admin Add Campaigns]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <div class="ant-picker-cell-inner">...</div> is not clickable at point (706, 269). Other element would receive the click: <td title="2022-04-14" class="ant-picker-cell ant-picker-cell-in-view">...</td>
-  (Session info: chrome=100.0.4896.88)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-AAL5JEA', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -> xpath: (//div[@class='ant-picker-cell-inner'][normalize-space()='21'])[1]]
-Session ID: 0276cdd22bb52a166dd38ad45417dd34]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="ant-picker-cell-inner">...</div> is not clickable at point (706, 269). Other element would receive the click: <td title="2022-04-14" class="ant-picker-cell ant-picker-cell-in-view">...</td>
-  (Session info: chrome=100.0.4896.88)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-AAL5JEA', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -> xpath: (//div[@class='ant-picker-cell-inner'][normalize-space()='21'])[1]]
-Session ID: 0276cdd22bb52a166dd38ad45417dd34
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-=======
-                <![CDATA["Optional[Update Address]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//i[@class = 'fas fa-bars'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//i[@class = 'fas fa-bars']' is not a valid XPath expression.
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'jannatuls-MBP.lan', ip: 'fe80:0:0:0:18eb:f77e:2719:87d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = 'fas fa-bars']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 00cf4fa722b04c96e2cf2f8966593e10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//i[@class = 'fas fa-bars'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//i[@class = 'fas fa-bars']' is not a valid XPath expression.
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'jannatuls-MBP.lan', ip: 'fe80:0:0:0:18eb:f77e:2719:87d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = 'fas fa-bars']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 00cf4fa722b04c96e2cf2f8966593e10
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-<<<<<<< HEAD
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-at ecom.pages.AdminCampaignsPOM.enterStartDate(AdminCampaignsPOM.java:99)
-at ecom.stepDefinitions.AdminCampaignsSteps.i_select_the_date_for_campaign(AdminCampaignsSteps.java:41)
-at ✽.I select the date for campaign(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_07_adminCampaigns.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:53 EDT" duration-ms="12422" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Admin should be able to add category successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Admin Add Category]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:53 EDT" name="tearDownClass" finished-at="2022-04-16T05:45:53 EDT" duration-ms="9" status="PASS">
-=======
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy24.click(Unknown Source)
-at ecom.pages.Buyer_Address_Add_Update_DeletePOM.clickONBurger01(Buyer_Address_Add_Update_DeletePOM.java:85)
-at ecom.stepDefinitions.Buyer_UpdateAndDeleteAddress_Steps.i_click_on_the_burger_icon(Buyer_UpdateAndDeleteAddress_Steps.java:28)
-at ✽.I click on the burger icon(file:///Users/jannatulfardusretu/Downloads/Untitled/src/test/java/ecom/features/TS4U_Ecom_3_AddressUpdate.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="tearDownClass" is-config="true" duration-ms="95" started-at="2022-04-16T01:42:14 EDT" finished-at="2022-04-16T01:42:14 EDT">
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@2a3b5b47]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2022-04-17T03:11:06 BDT" finished-at="2022-04-17T03:11:06 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

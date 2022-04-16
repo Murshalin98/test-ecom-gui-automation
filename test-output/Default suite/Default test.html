@@ -55,19 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<<<<<<< HEAD
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 16 05:44:53 EDT 2022</td>
+<td>Started on:</td><td>Sun Apr 17 03:10:54 BDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60398 ms)</td>
-=======
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
-</tr><tr>
-<td>Started on:</td><td>Sat Apr 16 01:42:08 EDT 2022</td>
-</tr>
-<tr><td>Total time:</td><td>6 seconds (6457 ms)</td>
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
+<tr><td>Total time:</td><td>11 seconds (11886 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,129 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<<<<<<< HEAD
-<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can add a campaign from the admin panel", "Optional[Admin Add Campaigns]"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;ant-picker-cell-inner&quot;&gt;...&lt;/div&gt; is not clickable at point (706, 269). Other element would receive the click: &lt;td title=&quot;2022-04-14&quot; class=&quot;ant-picker-cell ant-picker-cell-in-view&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=100.0.4896.88)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-AAL5JEA&apos;, ip: &apos;192.168.1.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -&gt; xpath: (//div[@class=&apos;ant-picker-cell-inner&apos;][normalize-space()=&apos;21&apos;])[1]]
-Session ID: 0276cdd22bb52a166dd38ad45417dd34
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-=======
-<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buyer Should Update Address succesfully", "Optional[Update Address]"</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//i[@class = &apos;fas fa-bars&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//i[@class = &apos;fas fa-bars&apos;]&apos; is not a valid XPath expression.
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;jannatuls-MBP.lan&apos;, ip: &apos;fe80:0:0:0:18eb:f77e:2719:87d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = &apos;fas fa-bars&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 00cf4fa722b04c96e2cf2f8966593e10
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-<<<<<<< HEAD
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-	at ecom.pages.AdminCampaignsPOM.enterStartDate(AdminCampaignsPOM.java:99)
-	at ecom.stepDefinitions.AdminCampaignsSteps.i_select_the_date_for_campaign(AdminCampaignsSteps.java:41)
-	at ?.I select the date for campaign(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_07_adminCampaigns.feature:13)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1394241900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1394241900'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;ant-picker-cell-inner&quot;&gt;...&lt;/div&gt; is not clickable at point (706, 269). Other element would receive the click: &lt;td title=&quot;2022-04-14&quot; class=&quot;ant-picker-cell ant-picker-cell-in-view&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=100.0.4896.88)
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-AAL5JEA&apos;, ip: &apos;192.168.1.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -&gt; xpath: (//div[@class=&apos;ant-picker-cell-inner&apos;][normalize-space()=&apos;21&apos;])[1]]
-Session ID: 0276cdd22bb52a166dd38ad45417dd34
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-=======
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at ecom.pages.Buyer_Address_Add_Update_DeletePOM.clickONBurger01(Buyer_Address_Add_Update_DeletePOM.java:85)
-	at ecom.stepDefinitions.Buyer_UpdateAndDeleteAddress_Steps.i_click_on_the_burger_icon(Buyer_UpdateAndDeleteAddress_Steps.java:28)
-	at ✽.I click on the burger icon(file:///Users/jannatulfardusretu/Downloads/Untitled/src/test/java/ecom/features/TS4U_Ecom_3_AddressUpdate.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1753107603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1753107603'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//i[@class = &apos;fas fa-bars&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//i[@class = &apos;fas fa-bars&apos;]&apos; is not a valid XPath expression.
-  (Session info: chrome=100.0.4896.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;jannatuls-MBP.lan&apos;, ip: &apos;fe80:0:0:0:18eb:f77e:2719:87d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = &apos;fas fa-bars&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 00cf4fa722b04c96e2cf2f8966593e10
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-<<<<<<< HEAD
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-	at ecom.pages.AdminCampaignsPOM.enterStartDate(AdminCampaignsPOM.java:99)
-	at ecom.stepDefinitions.AdminCampaignsSteps.i_select_the_date_for_campaign(AdminCampaignsSteps.java:41)
-	at ?.I select the date for campaign(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_07_adminCampaigns.feature:13)
-</pre></div></td>
-<td>14</td>
-<td>ecom.runner.TestRunner@6cce16f4</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -206,35 +75,10 @@ Session ID: 00cf4fa722b04c96e2cf2f8966593e10
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin should login successfully from admin URL", "Optional[Admin Login]"</td>
+<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Buyer should login successfully with valid credentials", "Optional[Buyer Login]"</td>
 <td></td>
-<td>10</td>
-<td>ecom.runner.TestRunner@6cce16f4</td></tr>
-<tr>
-<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin can add product from the admin's end", "Optional[Admin Add Product]"</td>
-<td></td>
-<td>22</td>
-<td>ecom.runner.TestRunner@6cce16f4</td></tr>
-<tr>
-<td title='ecom.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: ecom.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin should be able to add category successfully", "Optional[Admin Add Category]"</td>
-<td></td>
-<td>12</td>
-<td>ecom.runner.TestRunner@6cce16f4</td></tr>
-=======
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy24.click(Unknown Source)
-	at ecom.pages.Buyer_Address_Add_Update_DeletePOM.clickONBurger01(Buyer_Address_Add_Update_DeletePOM.java:85)
-	at ecom.stepDefinitions.Buyer_UpdateAndDeleteAddress_Steps.i_click_on_the_burger_icon(Buyer_UpdateAndDeleteAddress_Steps.java:28)
-	at ✽.I click on the burger icon(file:///Users/jannatulfardusretu/Downloads/Untitled/src/test/java/ecom/features/TS4U_Ecom_3_AddressUpdate.feature:7)
-</pre></div></td>
-<td>6</td>
-<td>ecom.runner.TestRunner@1283bb96</td></tr>
->>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
+<td>11</td>
+<td>ecom.runner.TestRunner@2a3b5b47</td></tr>
 </table><p>
 </body>
 </html>
