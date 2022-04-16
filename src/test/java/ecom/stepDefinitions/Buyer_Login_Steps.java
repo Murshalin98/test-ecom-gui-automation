@@ -12,10 +12,11 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
-@Epic("Authentication and Authorization")
-@Severity(SeverityLevel.NORMAL)
-@Feature("Login Feature")
-@Story("As a user i want to login")
+//@Epic("Authentication and Authorization")
+//@Severity(SeverityLevel.NORMAL)
+//@Feature("Login Feature")
+//@Story("As a user i want to login")
+
 public class Buyer_Login_Steps extends TestBase{
 	BuyerLoginPOM buyerLoginPOM;
 	
@@ -42,10 +43,10 @@ public class Buyer_Login_Steps extends TestBase{
 	public void i_click_on_the_log_in_button() {
 	    buyerLoginPOM.clickLoginButton();
 	}
-	@Then("I should be able to login successfully")
-	public void i_should_be_able_to_login_successfully() {
-	   buyerLoginPOM.verifyBuyerName();
-	   driver.quit();
-	}
+//	@Then("I should be able to login successfully")
+//	public void i_should_be_able_to_login_successfully() {
+//	   buyerLoginPOM.verifyBuyerName();
+//	   driver.quit();
+//	}
 
 }

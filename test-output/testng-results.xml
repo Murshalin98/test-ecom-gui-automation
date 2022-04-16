@@ -1,61 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26376" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:23:23 BDT">
+  <suite name="Default suite" duration-ms="6457" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:14 EDT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="26376" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:23:23 BDT">
+    <test name="Default test" duration-ms="6457" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:14 EDT">
       <class name="ecom.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="setUpClass" is-config="true" duration-ms="305" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:22:57 BDT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="setUpClass" is-config="true" duration-ms="185" started-at="2022-04-16T01:42:08 EDT" finished-at="2022-04-16T01:42:08 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@382c90c2]]>
+                <![CDATA[org.testng.TestRunner@75961f16]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" duration-ms="7598" started-at="2022-04-10T00:22:57 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-10T00:23:04 BDT">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="runScenario" duration-ms="6075" started-at="2022-04-16T01:42:08 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T01:42:14 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Buyer should login successfully with valid credentials"]]>
+                <![CDATA["Buyer Should Update Address succesfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Buyer Login]"]]>
+                <![CDATA["Optional[Update Address]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[Failed to decode response from marionette
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//i[@class = 'fas fa-bars'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//i[@class = 'fas fa-bars']' is not a valid XPath expression.
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6HD7MAC', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9378a654-5380-4c70-9632-c8830c40e491, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:debuggerAddress: localhost:60068, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14040, moz:profile: C:\Users\Murshalin\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60068/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9378a654-5380-4c70-9632-c8830c40e491]]>
+System info: host: 'jannatuls-MBP.lan', ip: 'fe80:0:0:0:18eb:f77e:2719:87d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = 'fas fa-bars']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00cf4fa722b04c96e2cf2f8966593e10]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//i[@class = 'fas fa-bars'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//i[@class = 'fas fa-bars']' is not a valid XPath expression.
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6HD7MAC', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9378a654-5380-4c70-9632-c8830c40e491, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:debuggerAddress: localhost:60068, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14040, moz:profile: C:\Users\Murshalin\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60068/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9378a654-5380-4c70-9632-c8830c40e491
+System info: host: 'jannatuls-MBP.lan', ip: 'fe80:0:0:0:18eb:f77e:2719:87d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [00cf4fa722b04c96e2cf2f8966593e10, findElement {using=xpath, value=(//i[@class = 'fas fa-bars']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: /var/folders/kv/tbjc7brj4z7...}, goog:chromeOptions: {debuggerAddress: localhost:52154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 00cf4fa722b04c96e2cf2f8966593e10
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -63,258 +69,23 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
-at ecom.utils.TestBase.intializeDriver(TestBase.java:57)
-at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Murshalin/Downloads/ecom.automation2/ecom.automation2/src/test/java/ecom/features/TS4U_Ecom_01_buyerLogin.feature:5)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy24.click(Unknown Source)
+at ecom.pages.Buyer_Address_Add_Update_DeletePOM.clickONBurger01(Buyer_Address_Add_Update_DeletePOM.java:85)
+at ecom.stepDefinitions.Buyer_UpdateAndDeleteAddress_Steps.i_click_on_the_burger_icon(Buyer_UpdateAndDeleteAddress_Steps.java:28)
+at ✽.I click on the burger icon(file:///Users/jannatulfardusretu/Downloads/Untitled/src/test/java/ecom/features/TS4U_Ecom_3_AddressUpdate.feature:7)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" duration-ms="18173" started-at="2022-04-10T00:23:04 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-10T00:23:23 BDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Buyer order a product successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Order Product]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'I login with my user credentials' and 15 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("I login with my user credentials")
-public void i_login_with_my_user_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Mens Fashion catagory")
-public void i_click_on_mens_fashion_catagory() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on a item")
-public void i_click_on_a_item() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Buy Now button")
-public void i_click_on_buy_now_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to shipping button")
-public void i_click_on_continue_to_shipping_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Add New Address button to add delivery address")
-public void i_click_on_add_new_address_button_to_add_delivery_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter all input address fields")
-public void i_enter_all_input_address_fields(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on create button")
-public void i_click_on_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on radio button to set primary address")
-public void i_click_on_radio_button_to_set_primary_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to payment button")
-public void i_click_on_continue_to_payment_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I select a payment method")
-public void i_select_a_payment_method() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm order button")
-public void i_click_on_confirm_order_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter transaction id")
-public void i_enter_transaction_id() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm button")
-public void i_click_on_confirm_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("I should see {string} button")
-public void i_should_see_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I logout from the application")
-public void i_logout_from_the_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I login with my user credentials' and 15 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("I login with my user credentials")
-public void i_login_with_my_user_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Mens Fashion catagory")
-public void i_click_on_mens_fashion_catagory() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on a item")
-public void i_click_on_a_item() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Buy Now button")
-public void i_click_on_buy_now_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to shipping button")
-public void i_click_on_continue_to_shipping_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Add New Address button to add delivery address")
-public void i_click_on_add_new_address_button_to_add_delivery_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter all input address fields")
-public void i_enter_all_input_address_fields(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on create button")
-public void i_click_on_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on radio button to set primary address")
-public void i_click_on_radio_button_to_set_primary_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to payment button")
-public void i_click_on_continue_to_payment_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I select a payment method")
-public void i_select_a_payment_method() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm order button")
-public void i_click_on_confirm_order_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter transaction id")
-public void i_enter_transaction_id() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm button")
-public void i_click_on_confirm_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("I should see {string} button")
-public void i_should_see_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I logout from the application")
-public void i_logout_from_the_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2022-04-10T00:23:23 BDT" finished-at="2022-04-10T00:23:23 BDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@1283bb96]" name="tearDownClass" is-config="true" duration-ms="95" started-at="2022-04-16T01:42:14 EDT" finished-at="2022-04-16T01:42:14 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
