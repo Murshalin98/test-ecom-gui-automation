@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features="src/test/java/ecom/features",
+		features="src/test/java/ecom/features/TS4U_Ecom_3_AddressUpdate.feature",
 		glue="ecom/stepDefinitions",
 		dryRun=false,
 		tags= "@Admin"

@@ -6,7 +6,11 @@
       <class name="ecom.runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
+<<<<<<< HEAD
           <include name="runScenario" invocation-numbers="2"/>
+=======
+          <include name="runScenario" invocation-numbers="0"/>
+>>>>>>> ceba85dabcc0e192329de5f2ffe63836e983cfbc
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- ecom.runner.TestRunner -->

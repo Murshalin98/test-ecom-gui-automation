@@ -58,16 +58,16 @@ public class BuyerLoginPOM extends TestBase{
 	}
 	
 	//Verify the buyer name 
-	public void verifyBuyerName() {
-		afterUserIcon.click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Assert.assertEquals(buyerName.getText(), "TS4U");
-	}
+//	public void verifyBuyerName() {
+//		afterUserIcon.click();
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		Assert.assertEquals(buyerName.getText(), "TS4U");
+//	}
 	
 
 }
