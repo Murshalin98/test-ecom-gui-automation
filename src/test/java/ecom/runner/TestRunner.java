@@ -7,12 +7,12 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features="src/test/java/ecom/features",
 		glue="ecom/stepDefinitions",
-		dryRun=false
-		
+		dryRun=false,
+		tags= "@Admin"
 		
 		)
 
 
-public class TestRunner  extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

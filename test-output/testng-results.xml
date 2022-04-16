@@ -1,61 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26376" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:23:23 BDT">
+  <suite started-at="2022-04-16T05:44:53 EDT" name="Default suite" finished-at="2022-04-16T05:45:53 EDT" duration-ms="60398">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="26376" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:23:23 BDT">
+    <test started-at="2022-04-16T05:44:53 EDT" name="Default test" finished-at="2022-04-16T05:45:53 EDT" duration-ms="60398">
       <class name="ecom.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="setUpClass" is-config="true" duration-ms="305" started-at="2022-04-10T00:22:56 BDT" finished-at="2022-04-10T00:22:57 BDT">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:44:53 EDT" name="setUpClass" finished-at="2022-04-16T05:44:53 EDT" duration-ms="353" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@382c90c2]]>
+                <![CDATA[org.testng.TestRunner@6dd38df2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" duration-ms="7598" started-at="2022-04-10T00:22:57 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-10T00:23:04 BDT">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:44:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:04 EDT" duration-ms="10965" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Buyer should login successfully with valid credentials"]]>
+                <![CDATA["Admin should login successfully from admin URL"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Buyer Login]"]]>
+                <![CDATA["Optional[Admin Login]"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:04 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:26 EDT" duration-ms="22029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin can add product from the admin's end"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Admin Add Product]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:41 EDT" duration-ms="14447" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin can add a campaign from the admin panel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Admin Add Campaigns]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Failed to decode response from marionette
+              <![CDATA[element click intercepted: Element <div class="ant-picker-cell-inner">...</div> is not clickable at point (706, 269). Other element would receive the click: <td title="2022-04-14" class="ant-picker-cell ant-picker-cell-in-view">...</td>
+  (Session info: chrome=100.0.4896.88)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6HD7MAC', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9378a654-5380-4c70-9632-c8830c40e491, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:debuggerAddress: localhost:60068, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14040, moz:profile: C:\Users\Murshalin\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60068/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9378a654-5380-4c70-9632-c8830c40e491]]>
+System info: host: 'DESKTOP-AAL5JEA', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -> xpath: (//div[@class='ant-picker-cell-inner'][normalize-space()='21'])[1]]
+Session ID: 0276cdd22bb52a166dd38ad45417dd34]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="ant-picker-cell-inner">...</div> is not clickable at point (706, 269). Other element would receive the click: <td title="2022-04-14" class="ant-picker-cell ant-picker-cell-in-view">...</td>
+  (Session info: chrome=100.0.4896.88)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6HD7MAC', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9378a654-5380-4c70-9632-c8830c40e491, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 98.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220322144853, moz:debuggerAddress: localhost:60068, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 14040, moz:profile: C:\Users\Murshalin\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60068/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9378a654-5380-4c70-9632-c8830c40e491
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
+System info: host: 'DESKTOP-AAL5JEA', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0276cdd22bb52a166dd38ad45417dd34, clickElement {id=fea7708b-2c8b-46c0-84e2-bee25f9c5f97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Rakibur Khan\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63706}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63706/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0276cdd22bb52a166dd38ad45417dd34)] -> xpath: (//div[@class='ant-picker-cell-inner'][normalize-space()='21'])[1]]
+Session ID: 0276cdd22bb52a166dd38ad45417dd34
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -63,258 +100,39 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
-at ecom.utils.TestBase.intializeDriver(TestBase.java:57)
-at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Murshalin/Downloads/ecom.automation2/ecom.automation2/src/test/java/ecom/features/TS4U_Ecom_01_buyerLogin.feature:5)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
+at ecom.pages.AdminCampaignsPOM.enterStartDate(AdminCampaignsPOM.java:99)
+at ecom.stepDefinitions.AdminCampaignsSteps.i_select_the_date_for_campaign(AdminCampaignsSteps.java:41)
+at ✽.I select the date for campaign(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_07_adminCampaigns.feature:13)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="runScenario" duration-ms="18173" started-at="2022-04-10T00:23:04 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-10T00:23:23 BDT">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-04-16T05:45:53 EDT" duration-ms="12422" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Buyer order a product successfully"]]>
+                <![CDATA["Admin should be able to add category successfully"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Order Product]"]]>
+                <![CDATA["Optional[Admin Add Category]"]]>
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
-            <message>
-              <![CDATA[The step 'I login with my user credentials' and 15 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("I login with my user credentials")
-public void i_login_with_my_user_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Mens Fashion catagory")
-public void i_click_on_mens_fashion_catagory() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on a item")
-public void i_click_on_a_item() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Buy Now button")
-public void i_click_on_buy_now_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to shipping button")
-public void i_click_on_continue_to_shipping_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Add New Address button to add delivery address")
-public void i_click_on_add_new_address_button_to_add_delivery_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter all input address fields")
-public void i_enter_all_input_address_fields(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on create button")
-public void i_click_on_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on radio button to set primary address")
-public void i_click_on_radio_button_to_set_primary_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to payment button")
-public void i_click_on_continue_to_payment_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I select a payment method")
-public void i_select_a_payment_method() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm order button")
-public void i_click_on_confirm_order_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter transaction id")
-public void i_enter_transaction_id() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm button")
-public void i_click_on_confirm_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("I should see {string} button")
-public void i_should_see_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I logout from the application")
-public void i_logout_from_the_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I login with my user credentials' and 15 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When("I login with my user credentials")
-public void i_login_with_my_user_credentials() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Mens Fashion catagory")
-public void i_click_on_mens_fashion_catagory() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on a item")
-public void i_click_on_a_item() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Buy Now button")
-public void i_click_on_buy_now_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to shipping button")
-public void i_click_on_continue_to_shipping_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Add New Address button to add delivery address")
-public void i_click_on_add_new_address_button_to_add_delivery_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter all input address fields")
-public void i_enter_all_input_address_fields(io.cucumber.datatable.DataTable dataTable) {
-    // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on create button")
-public void i_click_on_create_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on radio button to set primary address")
-public void i_click_on_radio_button_to_set_primary_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on Continue to payment button")
-public void i_click_on_continue_to_payment_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I select a payment method")
-public void i_select_a_payment_method() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm order button")
-public void i_click_on_confirm_order_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I enter transaction id")
-public void i_enter_transaction_id() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I click on confirm button")
-public void i_click_on_confirm_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("I should see {string} button")
-public void i_should_see_button(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("I logout from the application")
-public void i_logout_from_the_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@409bf450]" name="tearDownClass" is-config="true" duration-ms="17" started-at="2022-04-10T00:23:23 BDT" finished-at="2022-04-10T00:23:23 BDT">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ecom.runner.TestRunner@6cce16f4]" started-at="2022-04-16T05:45:53 EDT" name="tearDownClass" finished-at="2022-04-16T05:45:53 EDT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

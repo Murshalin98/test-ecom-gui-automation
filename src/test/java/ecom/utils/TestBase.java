@@ -57,7 +57,9 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("baseURL"));
+		driver.get(prop.getProperty("adminURL"));
+		
+		
 		
 		
 	}

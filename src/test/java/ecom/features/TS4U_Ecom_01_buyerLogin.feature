@@ -1,5 +1,6 @@
 Feature: Buyer Login
 
+@User
 Scenario: Buyer should login successfully with valid credentials
 
 Given Buyer should navigate to the baseURL

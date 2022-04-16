@@ -21,7 +21,7 @@ public class Buyer_Login_Steps extends TestBase{
 	
 	@Given("Buyer should navigate to the baseURL")
 	public void buyer_should_navigate_to_the_baseURL() {
-		intializeDriver();
+		//intializeDriver();
 	}
 	
 	@When("I click on the user icon")

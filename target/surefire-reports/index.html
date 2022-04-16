@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-failed">Command line suite</span>
+              <span class="suite-name border-passed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Command_line_suite">
+                    <div class="method-list-content passed suite-Command_line_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Buyer order a product successfully&quot;, &quot;Optional[Order Product]&quot;)">runScenario("Buyer order a product successfully", "Optional[Order Product]")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin can add product from the admin&#039;s end&quot;, &quot;Optional[Admin Add Product]&quot;)">runScenario("Admin can add product from the admin's end", "Optional[Admin Add Product]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Buyer should login successfully with valid credentials&quot;, &quot;Optional[Buyer Login]&quot;)">runScenario("Buyer should login successfully with valid credentials", "Optional[Buyer Login]")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin can add a campaign from the admin panel&quot;, &quot;Optional[Admin Add Campaigns]&quot;)">runScenario("Admin can add a campaign from the admin panel", "Optional[Admin Add Campaigns]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin should be able to add category successfully&quot;, &quot;Optional[Admin Add Category]&quot;)">runScenario("Admin should be able to add category successfully", "Optional[Admin Add Category]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ecom.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin should login successfully from admin URL&quot;, &quot;Optional[Admin Login]&quot;)">runScenario("Admin should login successfully from admin URL", "Optional[Admin Login]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,46 +134,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-failed">
+          <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">ecom.runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Buyer order a product successfully&quot;, &quot;Optional[Order Product]&quot;)">
-                  </a> <!-- runScenario("Buyer order a product successfully", "Optional[Order Product]") -->
+                  <a name="runScenario(&quot;Admin can add product from the admin&#039;s end&quot;, &quot;Optional[Admin Add Product]&quot;)">
+                  </a> <!-- runScenario("Admin can add product from the admin's end", "Optional[Admin Add Product]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Buyer order a product successfully", "Optional[Order Product]")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
-	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
-	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-	at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_02_buyProduct.feature:4)
-
-</div> <!-- stack-trace -->
+                  <span class="parameters">("Admin can add product from the admin's end", "Optional[Admin Add Product]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Buyer should login successfully with valid credentials&quot;, &quot;Optional[Buyer Login]&quot;)">
-                  </a> <!-- runScenario("Buyer should login successfully with valid credentials", "Optional[Buyer Login]") -->
+                  <a name="runScenario(&quot;Admin can add a campaign from the admin panel&quot;, &quot;Optional[Admin Add Campaigns]&quot;)">
+                  </a> <!-- runScenario("Admin can add a campaign from the admin panel", "Optional[Admin Add Campaigns]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Buyer should login successfully with valid credentials", "Optional[Buyer Login]")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
-	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
-	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-	at ✽.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_01_buyerLogin.feature:5)
-
-</div> <!-- stack-trace -->
+                  <span class="parameters">("Admin can add a campaign from the admin panel", "Optional[Admin Add Campaigns]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin should be able to add category successfully&quot;, &quot;Optional[Admin Add Category]&quot;)">
+                  </a> <!-- runScenario("Admin should be able to add category successfully", "Optional[Admin Add Category]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin should be able to add category successfully", "Optional[Admin Add Category]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin should login successfully from admin URL&quot;, &quot;Optional[Admin Login]&quot;)">
+                  </a> <!-- runScenario("Admin should login successfully from admin URL", "Optional[Admin Login]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin should login successfully from admin URL", "Optional[Admin Login]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -224,20 +242,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'ecom.runner.TestRunner')
-data.setCell(0, 3, 3285);
+data.setCell(0, 3, 21953);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'ecom.runner.TestRunner')
-data.setCell(1, 3, 1037);
+data.setCell(1, 3, 21553);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'ecom.runner.TestRunner')
+data.setCell(2, 3, 12856);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'ecom.runner.TestRunner')
+data.setCell(3, 3, 10922);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -265,24 +291,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">ecom.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@59b65dce)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@24018c8b)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Buyer should login successfully with valid credentials", "Optional[Buyer Login]")</span>
-                <span class="method-start">277 ms</span>
+                <span class="method-name">runScenario("Admin should login successfully from admin URL", "Optional[Admin Login]")</span>
+                <span class="method-start">183 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Buyer order a product successfully", "Optional[Order Product]")</span>
-                <span class="method-start">3615 ms</span>
+                <span class="method-name">runScenario("Admin can add product from the admin's end", "Optional[Admin Add Product]")</span>
+                <span class="method-start">13133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin can add a campaign from the admin panel", "Optional[Admin Add Campaigns]")</span>
+                <span class="method-start">35086 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin should be able to add category successfully", "Optional[Admin Add Category]")</span>
+                <span class="method-start">56639 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">4657 ms</span>
+                <span class="method-start">67564 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

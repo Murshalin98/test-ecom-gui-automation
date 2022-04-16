@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.753 sec <<< FAILURE!
-runScenario(ecom.runner.TestRunner)  Time elapsed: 3.338 sec  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
-	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-	at ?.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_01_buyerLogin.feature:5)
-
-runScenario(ecom.runner.TestRunner)  Time elapsed: 1.038 sec  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-	at ecom.utils.TestBase.intializeDriver(TestBase.java:48)
-	at ecom.stepDefinitions.Buyer_Login_Steps.buyer_should_navigate_to_the_baseURL(Buyer_Login_Steps.java:24)
-	at ?.Buyer should navigate to the baseURL(file:///C:/Users/Rakibur%20Khan/OneDrive/Documents/Ecom%20Repo/test-ecom-gui-automation/src/test/java/ecom/features/TS4U_Ecom_02_buyProduct.feature:4)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 68.193 sec
