@@ -1,9 +1,9 @@
 package ecom.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import ecom.utils.TestBase;
 import io.qameta.allure.Step;
@@ -33,6 +33,8 @@ public class BuyerLoginPOM extends TestBase{
 	@FindBy(xpath="//p[contains(text(),'TS4U')]")
 	WebElement buyerName;
 	
+	By userIcons = By.xpath("//header/div[1]/nav[1]/div[1]/div[3]/span[2]/i[1]");
+	
 	//Initialize the web elements
 	public BuyerLoginPOM() {
 		PageFactory.initElements(driver, this);
@@ -49,7 +51,9 @@ public class BuyerLoginPOM extends TestBase{
 
 	//Click user icon
 	public void clickUserIcon() {
-		userIcon.click();
+		// userIcon.click();
+		// clickElementByJS(userIcon);
+		clickOn(userIcons);
 	}
 	
 	//Click on the login button

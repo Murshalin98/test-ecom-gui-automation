@@ -2,13 +2,21 @@ package ecom.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -84,8 +92,102 @@ public class TestBase {
 			driver.get(prop.getProperty("baseURL"));
 		}
 	
-	
-	
-	
+		
+		//  Dynamic Methods
+		//Click Element through JS
+	    public void clickElementByJS(WebElement element) {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("arguments[0].click();", element);
+	    }
 
+	    //Send keys by Id through JS
+	    public void sendKeysUsingWithId(String id, String value) {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("document.getElementById('" + id + "').value='" + value + "'");
+	    }
+
+	    //Get Title by JS
+	    public String getTitleByJS() {
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        return js.executeScript("return document.title;").toString();
+	    }
+
+	    public static WebDriver getDriver(){
+	        return driver;
+	    }
+
+	    public void clickOn(By locator) {
+	        getDriver().findElement(locator).click();
+
+	    }
+
+	    public void setValue(By locator, String value) {
+	        getDriver().findElement(locator).sendKeys(value);
+
+	    }
+
+
+	    public boolean IsElementDisplayed(By locator) {
+
+
+	        boolean IsDisplayed;
+
+	        try {
+	            IsDisplayed = getDriver().findElement(locator).isDisplayed();
+	        } catch (NoSuchElementException e) {
+	            IsDisplayed = false;
+
+	        }
+	        return IsDisplayed;
+
+	    }
+
+	    public void selectByValueFromDropDown(By locator, String value) {
+	        WebElement dropDwonElement = getDriver().findElement(locator);
+	        Select dropDown = new Select(dropDwonElement);
+	        dropDown.selectByValue(value);
+	    }
+
+
+	    public By getBy(String locatorType, String locatorValue) {
+	        By locator = null;
+
+	        switch (locatorType.toLowerCase()) {
+	            case "id":
+	                locator = By.id(locatorValue);
+	                break;
+	            case "name":
+	                locator = By.name(locatorValue);
+	                break;
+	            case "classname":
+	                locator = By.className(locatorValue);
+	                break;
+	            case "xpath":
+	                locator = By.xpath(locatorValue);
+	                break;
+	            case "cssselector":
+	                locator = By.cssSelector(locatorValue);
+	                break;
+	            case "linktext":
+	                locator = By.linkText(locatorValue);
+	                break;
+
+	            default:
+	                System.out.println("please pass the right locator type and value.....");
+	                break;
+	        }
+
+	        return locator;
+
+	    }
+
+	    public WebElement doPresenceOfElementLocated(By locator, int timeOut) {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
+	        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+	    }
+
+	    public void doSendKeys(By locator, String value, int timeOut) {
+	        doPresenceOfElementLocated(locator, timeOut).sendKeys(value);
+	    }
 }
